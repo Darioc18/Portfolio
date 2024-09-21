@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tailwind Portfolio</title>
+</head>
+<body class="font-nunito">
+    <!-- intro section -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
+        <!-- navbar -->
+        <nav class="w-full fixed top-0 bg-white">
+            <div class="container mx-auto py-5 flex justify-between">
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm">
+                    <li class="hover:text-gray-500">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="">About</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="">Projects</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div id="linetop" class="w-6 h-0.5 bg-black"></div>
+                    <div id="linemiddle" class="w-6 h-0.5 bg-black"></div>
+                    <div id="linebottom" class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Projects</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- name and description -->
+        <div class="mt-16">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8my-8 px-4 lg:px-8">
+                <!-- text -->
+                <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:items-center py-20">
+                    <h1 class="text-black text-3xl font-bold z-50">Dario Covella</h1>
+                    <h1 class="text-black text-3xl font-bold z-50">Software Developer</h1>            
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis qui numquam quos, odit aspernatur aperiam voluptas sit possimus consequuntur nobis magni molestiae labore, eius ea facilis. Inventore, deserunt velit?</p>
+                </div>
+                <!-- image -->
+                <div>
+                    <img class="mx-auto max-w-md sm:pb-6" src="./img/avatar.png" alt="">
+                </div>
+            </div>            
+        </div>
+        <!-- my work -->
+        <div class="my-8 px-4 lg:px-8">
+            <div>
+                <h1>My work</h1>
+                <p>Some examples of my work and projects I've worked or I'm currently working on, feedback is always appreaciated</p>
+            </div>
+            <div class="pt-8 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none lg:gap-8">
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white">
+                    <img src="./img/lari-living-home.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, sunt optio facilis labore beatae quae quasi perferendis magni facere omnis fugiat quisquam, sequi placeat molestias ipsum quia! Fugit, sed excepturi!</p>
+                    </div>
+                </div>
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <img src="./img/lari-living-home.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, sunt optio facilis labore beatae quae quasi perferendis magni facere omnis fugiat quisquam, sequi placeat molestias ipsum quia! Fugit, sed excepturi!</p>
+                    </div>
+                </div>
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <img src="./img/lari-living-home.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, sunt optio facilis labore beatae quae quasi perferendis magni facere omnis fugiat quisquam, sequi placeat molestias ipsum quia! Fugit, sed excepturi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->        
+        <div class="bg-white">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl font-extrabold text-center text-black">Contact Me</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-black sm:text-xl">Send me a message</p>
+                <form action="#" class="space-y-8">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-black">Name</label>
+                        <input type="text" id="name" class="block p-3 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let me know how I can help you" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-black">Your email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@name.com" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-black">Your message</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="w-full p-3 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
+                    
+                </form>
+            </div>
+        </div>               
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
